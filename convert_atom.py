@@ -28,7 +28,7 @@ for entry in entries:
 
 for article in articles:
     filename = slugify(article['title'])
-    f = open('content/%s' % filename, 'w')
+    f = open('content/%s.txt' % filename, 'w')
     f.write(article['title'] + '\n')
     f.write(article['published'] + '\n')
     f.write('###\n')
