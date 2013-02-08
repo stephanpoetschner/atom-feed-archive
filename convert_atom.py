@@ -1,9 +1,11 @@
+#!/usr/bin/env python
 # coding: utf-8
 from BeautifulSoup import BeautifulSoup
 import HTMLParser
 from os.path import basename
 
 from django.template.defaultfilters import slugify
+import requests
 
 parser = HTMLParser.HTMLParser()
 soup = BeautifulSoup(open('feed.atom'))
